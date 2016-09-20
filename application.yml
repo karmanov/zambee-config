@@ -1,0 +1,9 @@
+debug: true
+logging: 
+  level: 
+    org.springframework.security: DEBUG
+endpoints: 
+  shutdown: 
+    enabled: true
+server:
+    port: ${PORT:0}
