@@ -1,3 +1,17 @@
 server:
-    port: ${PORT:10300}
-message: Hello World!
+    port: 10300
+
+logging:
+  level:
+    org.springframework.security: INFO
+
+endpoints:
+  shutdown:
+    enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://registry:8761/eureka/

@@ -5,4 +5,11 @@ eureka:
   client: 
     register-with-eureka: false
     fetch-registry: false
-#eureka.client.enabled=false
+
+logging:
+  level:
+    org.springframework.security: INFO
+
+endpoints:
+  shutdown:
+    enabled: true
