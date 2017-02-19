@@ -22,3 +22,14 @@ zuul:
       path: /bookmarks/**
       url: http://localhost:10300
       stripPrefix: false
+
+---
+
+spring:
+  profiles: development
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
