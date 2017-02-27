@@ -1,17 +1,6 @@
 server:
   port: 10100
 
-logging:
-  level:
-    org.springframework.security: INFO
-
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    serviceUrl:
-      defaultZone: http://registry:8761/eureka/
-
 zuul:
   routes:
     crawler:
@@ -27,13 +16,4 @@ zuul:
       url: http://localhost:10500
       stripPrefix: false
 
----
 
-spring:
-  profiles: development
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
