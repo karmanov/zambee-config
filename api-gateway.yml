@@ -15,5 +15,9 @@ zuul:
       path: /ping/**
       url: http://localhost:10500
       stripPrefix: false
+    pong:
+      path: /pong/**
+      url: http://localhost:10600
+      stripPrefix: false
 
 
