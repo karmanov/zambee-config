@@ -1,14 +1,15 @@
 server:
   port: 10100
 
-#zuul:
+zuul:
 #  retryable: true
-#  ignoredServices: '*'
-#  routes:
-#    crawler:
-#      path: /crawler/**
-#      url: http://localhost:10200
-#      stripPrefix: false
+  ignoredServices: '*'
+  routes:
+    finance-analyzer:
+      path: /transactions/**
+      serviceId: account-service
+      stripPrefix: false
+      sensitiveHeaders:
 #    bookmarks:
 #      path: /bookmarks/**
 #      url: http://localhost:10300
