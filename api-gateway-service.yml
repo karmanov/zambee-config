@@ -7,7 +7,7 @@ zuul:
   routes:
     finance-analyzer:
       path: /transactions/**
-      serviceId: account-service
+      serviceId: finance-analyzer
       stripPrefix: false
       sensitiveHeaders:
 #    bookmarks:
