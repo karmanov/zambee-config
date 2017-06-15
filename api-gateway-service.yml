@@ -1,0 +1,25 @@
+server:
+  port: 10100
+
+#zuul:
+#  retryable: true
+#  ignoredServices: '*'
+#  routes:
+#    crawler:
+#      path: /crawler/**
+#      url: http://localhost:10200
+#      stripPrefix: false
+#    bookmarks:
+#      path: /bookmarks/**
+#      url: http://localhost:10300
+#      stripPrefix: false
+#    ping:
+#      path: /ping/**
+#      url: http://localhost:10500
+#      stripPrefix: false
+#    pong:
+#      path: /pong/**
+#      url: http://localhost:10600
+#      stripPrefix: false
+
+
