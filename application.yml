@@ -8,6 +8,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://registry:8761/eureka/
+    region: default
+    registryFetchIntervalSeconds: 5
 
 management.security.enabled: false
 
@@ -25,3 +27,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+    region: default
+    registryFetchIntervalSeconds: 5
